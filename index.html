@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="img/icon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
@@ -13,28 +14,31 @@
   >
     <!-- Home Section -->
     <div
-      class="fixed top-0 left-0 right-0 w-full bg-white/50 text-black flex justify-center py-5 space-x-20 z-[999] backdrop-blur-md"
+    class="fixed top-0 left-0 right-0 w-full bg-white/70 text-black flex justify-center py-5 space-x-20 z-[999] backdrop-blur-md"
+  >
+    <!-- 로고 이미지 (Home 링크 대체) -->
+    <a href="#home" class="flex items-center">
+      <img src="img/main.png" alt="Logo" class="h-10 w-auto" />
+    </a>
+  
+    <a
+      href="#gallery"
+      class="text-2xl hover:underline transition duration-300"
+      >Gallery</a
     >
-      <a href="#home" class="text-2xl hover:underline transition duration-300"
-        >Home</a
-      >
-      <a
-        href="#gallery"
-        class="text-2xl hover:underline transition duration-300"
-        >Gallery</a
-      >
-      <a
-        href="#contact"
-        class="text-2xl hover:underline transition duration-300"
-        >Contact</a
-      >
-    </div>
+    <a
+      href="#contact"
+      class="text-2xl hover:underline transition duration-300"
+      >About</a
+    >
+  </div>
+  
 
     <section
       id="home"
       class="flex justify-center items-center bg-no-repeat bg-bottom px-6"
       style="
-        background-image: url('img/landscape/travel/life2.jpg');
+        background-image: url('img/landscape/travel/bird.jpg');
         background-size: cover;
         height: 100vh;
         background-position: bottom center;
@@ -47,297 +51,121 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="py-20">
+    <section id="gallery" class="pt-20">
       <h2 class="text-7xl font-bold text-center mt-10 mb-20">Gallery</h2>
       <h3 class="text-4xl font-bold text-center mb-10">Portraits</h3>
       <div class="max-w-7xl mx-auto px-6 grid gap-6">
-        <!-- 1 : 1 : 1 비율 -->
+        <!-- 반복되는 갤러리 이미지들을 모두 동일한 형식으로 래핑 -->
         <div class="grid grid-cols-3 gap-4">
-          <div class="overflow-hidden">
-            <img
-              src="img/portrait/person/girl_4.jpg"
-              class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer"
-            />
-          </div>
-          <img
-            src="img/portrait/person/leny_1.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/h-3.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
+          <div class="overflow-hidden"><img src="img/portrait/person/girl_5.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/h-3.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/leny_5.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
         </div>
-        <!-- 1 : 1 : 1 비율 -->
         <div class="grid grid-cols-3 gap-4">
-          <img
-            src="img/portrait/person/leny_5.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/e-3.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/b-2.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
+          <div class="overflow-hidden"><img src="img/portrait/person/j-2.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/e-3.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/b-2.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
         </div>
-        <!-- 1 : 1 : 1 비율 -->
         <div class="grid grid-cols-3 gap-4">
-          <img
-            src="img/portrait/person/boy_2.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/girl_2.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/a-1.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
+          <div class="overflow-hidden"><img src="img/portrait/person/leny_1.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/girl_2.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/j-4.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
         </div>
-
-        <!-- 1 : 1 : 1 비율 -->
         <div class="grid grid-cols-3 gap-4">
-          <img
-            src="img/portrait/person/b-1.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/h-6.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/girl_3.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
+          <div class="overflow-hidden"><img src="img/portrait/person/anissa_1.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/e-4.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/a-1.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
         </div>
-        <!-- 1 : 1 : 1 비율 -->
         <div class="grid grid-cols-3 gap-4">
-          <img
-            src="img/portrait/person/a-4.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/c-1.JPG"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/c-2.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
+          <div class="overflow-hidden"><img src="img/portrait/person/h-1.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/j-3.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/boy_2.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
         </div>
-
-        <!-- 1 : 1 : 1 비율 -->
         <div class="grid grid-cols-3 gap-4">
-          <img
-            src="img/portrait/person/h-4.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/d-2.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/boy_3.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
+          <div class="overflow-hidden"><img src="img/portrait/person/b-1.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/h-6.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/girl_3.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
         </div>
-
-        <!-- 1 : 1 : 1 비율 -->
+        <div class="grid grid-cols-3 gap-4">
+          <div class="overflow-hidden"><img src="img/portrait/person/a-4.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/c-1.JPG" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/c-2.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="overflow-hidden"><img src="img/portrait/person/h-4.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/d-2.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/boy_3.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+        </div>
         <div class="grid grid-cols-4 gap-4">
-          <img
-            src="img/portrait/person/c-6.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/d-3.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/g-1.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/h-9.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
+          <div class="overflow-hidden"><img src="img/portrait/person/c-6.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/d-3.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/g-1.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden"><img src="img/portrait/person/h-9.jpg" class="w-full gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
         </div>
-        <!-- 
-        <div class="grid grid-cols-4 gap-4">
-          <img
-            src="img/portrait/person/c-3.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/c-4.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/c-5.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/c-6.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-        </div>
-
         <div class="grid grid-cols-3 gap-4">
-          <img
-            src="img/portrait/person/d-1.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/d-2.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/d-3.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
+          <div class="overflow-hidden"><img src="img/portrait/person/leny_4.jpg" class="w-full h-full object-cover gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
+          <div class="overflow-hidden col-span-2"><img src="img/portrait/person/i-1.jpg" class="w-full h-full object-cover gallery-item transition-transform duration-500 transform scale-100 hover:scale-110 cursor-pointer" /></div>
         </div>
-
-        <div class="grid grid-cols-3 gap-4">
-          <img
-            src="img/portrait/person/e-1.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/e-2.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/e-3.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-        </div>
-
-        <div class="grid grid-cols-3 gap-4">
-          <img
-            src="img/portrait/person/g-1.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/g-2.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/g-3.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-        </div> 
-
-        <div class="grid grid-cols-4 gap-4">
-          <img
-            src="img/portrait/person/h-1.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/h-9.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/h-3.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/h-4.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-        </div>
-
-        <div class="grid grid-cols-4 gap-4">
-          <img
-            src="img/portrait/person/h-5.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/h-6.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/h-10.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/h-8.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-        </div> -->
-
-        <div class="grid grid-cols-3 gap-4">
-          <div>
-            <img
-              src="img/portrait/person/leny_4.jpg"
-              class="w-full h-full object-cover gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-            />
-          </div>
-          <div class="col-span-2">
-            <img
-              src="img/portrait/person/i-1.jpg"
-              class="w-full h-full object-cover gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-            />
-          </div>
-        </div>
-
-        <!-- <div class="grid grid-cols-2 gap-4">
-          <img
-            src="img/portrait/person/leny_3.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-          <img
-            src="img/portrait/person/leny_4.jpg"
-            class="w-full gallery-item hover:brightness-75 transition transform scale-100 cursor-pointer"
-          />
-        </div> -->
-
       </div>
+
+
       <!-- Contact Section -->
-      <section id="contact" class="py-20">
-        <div class="max-w-4xl mx-auto text-center px-6">
-          <h2 class="text-3xl font-bold mb-6">Contact</h2>
-          <p class="text-lg text-gray-600 mb-4">
-            Email:
-            <a
-              href="mailto:dwlsc0304@gmail.com"
-              class="text-blue-500 hover:underline"
-              >dwlsc0304@gmail.com</a
-            >
-          </p>
-          <p class="text-lg text-gray-600">
-            Instagram:
-            <a
-              href="https://www.instagram.com/__eugene_c__/"
-              class="text-blue-500 hover:underline"
-              >@__eugene_c__</a
-            >
-          </p>
+      <section id="contact" class="min-h-screen flex items-start justify-center py-28 px-6">
+        <div class="max-w-5xl w-full">
+          <h2 class="text-5xl font-extrabold text-center text-gray-800 mb-16 tracking-tight mb-48">About</h2>
+      
+          <div class="flex flex-col md:flex-row items-center justify-center md:space-x-24">
+            
+            <!-- 더 큰 직사각형 프로필 이미지 -->
+            <div class="w-[500px] h-auto mb-12 md:mb-0">
+              <img src="img/portrait/person/about.jpg" alt="Choi Gyesu Profile"
+                   class="w-full aspect-[3/4] object-cover rounded-2xl shadow-xl border" />
+            </div>
+      
+            <!-- 소개글 + 소셜 링크 -->
+            <div class="max-w-md">
+              <p class="text-xl text-gray-700 leading-relaxed mb-10">
+                안녕하세요, 사진가 <strong class="text-gray-900">최계수</strong>입니다.<br />
+                주로 외국인을 대상으로 인물 중심의 사진 작업을 하며,<br />
+                감정과 순간의 흐름을 포착하는 데 집중합니다.<br />
+                한국을 찾은 외국인들이 이곳에서의 시간을 오래도록 기억할 수 있도록,<br />
+                따뜻한 시선으로 그들의 순간을 사진에 담고 있습니다.<br />
+                현재 <span class="text-gray-900">서울</span>을 중심으로 활동 중입니다.
+              </p>
+      
+              <!-- 소셜 링크 -->
+              <div class="flex flex-col space-y-4">
+                <a href="mailto:dwlsc0304@gmail.com"
+                   class="inline-flex items-center text-gray-700 hover:text-blue-600 transition duration-300 text-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24"
+                       stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M16 12H8m8 0l-4-4m4 4l-4 4" />
+                  </svg>
+                  dwlsc0304@gmail.com
+                </a>
+      
+                <a href="https://www.instagram.com/__eugene_c__/" target="_blank"
+                   class="inline-flex items-center text-gray-700 hover:text-pink-500 transition duration-300 text-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24"
+                       stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M17 8h.01M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 0c-4.418 0-8 1.79-8 4v2h16v-2c0-2.21-3.582-4-8-4z" />
+                  </svg>
+                  @__eugene_c__
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-    </section>
+      
 
     <!-- 모달 -->
-    <div
-      id="imageModal"
-      class="hidden fixed inset-0 bg-white bg-opacity-100 flex justify-center items-center z-[1001]"
-    >
+    <div id="imageModal" class="hidden fixed inset-0 bg-white bg-opacity-100 flex justify-center items-center z-[1001]">
       <div class="relative w-full h-full flex justify-center items-center">
-        <!-- X 버튼을 화면의 맨 우측 상단으로 이동 -->
-        <span
-          id="closeModal"
-          class="absolute text-black text-4xl cursor-pointer top-0 right-0 pr-6 transition hover:text-gray-400"
-        >
-          &times;
-        </span>
-        <!-- 이미지가 세로로 화면 끝까지 가도록 설정 -->
-        <img
-          id="modalImage"
-          src=""
-          class="w-auto h-screen max-h-screen object-contain"
-        />
+        <span id="closeModal" class="absolute text-black text-4xl cursor-pointer top-0 right-0 pr-6 transition hover:text-gray-400">&times;</span>
+        <img id="modalImage" src="" class="w-auto h-screen max-h-screen object-contain" />
       </div>
     </div>
 
@@ -346,7 +174,6 @@
       const modalImage = document.getElementById("modalImage");
       const closeModal = document.getElementById("closeModal");
 
-      // 이미지 클릭 시 모달 띄우기
       document.querySelectorAll(".gallery-item").forEach((item) => {
         item.addEventListener("click", function () {
           modalImage.src = this.src;
@@ -354,19 +181,16 @@
         });
       });
 
-      // X 버튼 클릭 시 모달 닫기
       closeModal.addEventListener("click", function () {
         modal.classList.add("hidden");
       });
 
-      // 모달 바깥 클릭 시 닫기 (수정)
       modal.addEventListener("click", function (e) {
         if (!modalImage.contains(e.target) && e.target !== closeModal) {
           modal.classList.add("hidden");
         }
       });
 
-      // ESC 키 눌렀을 때 모달 닫기
       document.addEventListener("keydown", function (e) {
         if (e.key === "Escape") {
           modal.classList.add("hidden");
@@ -374,7 +198,6 @@
       });
     </script>
 
-    <!-- Footer -->
     <footer class="py-6 bg-black text-white text-center">
       <p>© 2025 Choi Gyesu</p>
     </footer>
