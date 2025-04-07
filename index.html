@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="icon" type="image/png" href="img/icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
@@ -14,24 +15,32 @@
   >
     <!-- Home Section -->
     <div
-    class="fixed top-0 left-0 right-0 w-full bg-white/70 text-black flex justify-center py-5 space-x-20 z-[999] backdrop-blur-md"
+    class="fixed top-0 left-0 right-0 w-full bg-white/70 text-black flex items-center justify-start px-10 py-4 z-[999] backdrop-blur-md"
   >
-    <!-- 로고 이미지 (Home 링크 대체) -->
-    <a href="#home" class="flex items-center">
-      <img src="img/main.png" alt="Logo" class="h-10 w-auto" />
-    </a>
+    <!-- 전체 그룹 (로고 + 메뉴) -->
+    <div class="flex items-center space-x-20">
+      <!-- 로고 -->
+      <a
+        href="#home"
+        class="text-4xl font-bold"
+        style="font-family: 'Bebas Neue', sans-serif; font-weight: 700; font-style: normal;"
+      >
+        Choi Gyesu
+      </a>
   
-    <a
-      href="#gallery"
-      class="text-2xl hover:underline transition duration-300"
-      >Gallery</a
-    >
-    <a
-      href="#contact"
-      class="text-2xl hover:underline transition duration-300"
-      >About</a
-    >
+      <!-- 메뉴 -->
+      <div class="flex space-x-16">
+        <a href="#gallery" class="text-2xl hover:underline transition duration-300">
+          Gallery
+        </a>
+        <a href="#contact" class="text-2xl hover:underline transition duration-300">
+          About
+        </a>
+      </div>
+    </div>
   </div>
+  
+
   
 
     <section
@@ -46,7 +55,7 @@
     >
       <div class="text-center p-6 rounded-lg text-white max-w-4xl mx-auto">
         <h1 class="text-7xl font-bold mb-6">최 계 수</h1>
-        <p class="text-2xl">사진가</p>
+        <p class="text-2xl">새의 실루엣만으로도 그 존재를 알듯, 나의 사진으로도 내가 전해지길</p>
       </div>
     </section>
 
@@ -127,8 +136,7 @@
               <p class="text-xl text-gray-700 leading-relaxed mb-10">
                 안녕하세요, 사진가 <strong class="text-gray-900">최계수</strong>입니다.<br />
                 주로 외국인을 대상으로 인물 중심의 사진 작업을 하며,<br />
-                감정과 순간의 흐름을 포착하는 데 집중합니다.<br />
-                한국을 찾은 외국인들이 이곳에서의 시간을 오래도록 기억할 수 있도록,<br />
+                한국을 찾은 외국인들이 이곳에서의 시간을 오래도록 기억할 수 있도록,
                 따뜻한 시선으로 그들의 순간을 사진에 담고 있습니다.<br />
                 현재 <span class="text-gray-900">서울</span>을 중심으로 활동 중입니다.
               </p>
