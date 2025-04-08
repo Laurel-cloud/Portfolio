@@ -121,11 +121,11 @@
       <!-- Contact Section -->
       <section id="contact" class="min-h-screen flex items-start justify-center py-28 px-6">
         <div class="max-w-5xl w-full">
-          <h2 class="text-5xl font-extrabold text-center text-gray-800 mb-16 tracking-tight mb-48">About</h2>
+          <h2 class="text-5xl font-extrabold text-center text-gray-800 mb-48 tracking-tight">About</h2>
       
           <div class="flex flex-col md:flex-row items-center justify-center md:space-x-24">
             
-            <!-- 더 큰 직사각형 프로필 이미지 -->
+            <!-- 프로필 이미지 -->
             <div class="w-[500px] h-auto mb-12 md:mb-0">
               <img src="img/portrait/person/about.jpg" alt="Choi Gyesu Profile"
                    class="w-full aspect-[3/4] object-cover rounded-2xl shadow-xl border" />
@@ -133,9 +133,9 @@
       
             <!-- 소개글 + 소셜 링크 -->
             <div class="max-w-md">
-              <p class="text-xl text-gray-700 leading-relaxed mb-10">
+              <p class="text-2xl text-gray-700 leading-relaxed mb-10">
                 안녕하세요, 사진가 <strong class="text-gray-900">최계수</strong>입니다.<br />
-                주로 외국인을 대상으로 인물 중심의 사진 작업을 하며,<br />
+                주로 외국인을 대상으로 인물 중심의 사진 작업을 하며,
                 한국을 찾은 외국인들이 이곳에서의 시간을 오래도록 기억할 수 있도록,
                 따뜻한 시선으로 그들의 순간을 사진에 담고 있습니다.<br />
                 현재 <span class="text-gray-900">서울</span>을 중심으로 활동 중입니다.
@@ -143,30 +143,40 @@
       
               <!-- 소셜 링크 -->
               <div class="flex flex-col space-y-4">
+                <!-- 이메일 -->
                 <a href="mailto:dwlsc0304@gmail.com"
-                   class="inline-flex items-center text-gray-700 hover:text-blue-600 transition duration-300 text-lg">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24"
-                       stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M16 12H8m8 0l-4-4m4 4l-4 4" />
-                  </svg>
+                  class="text-xl font-semibold text-gray-700 hover:text-blue-500 transition duration-300">
                   dwlsc0304@gmail.com
                 </a>
-      
+
+                <!-- 인스타그램 -->
                 <a href="https://www.instagram.com/__eugene_c__/" target="_blank"
-                   class="inline-flex items-center text-gray-700 hover:text-pink-500 transition duration-300 text-lg">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24"
-                       stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M17 8h.01M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 0c-4.418 0-8 1.79-8 4v2h16v-2c0-2.21-3.582-4-8-4z" />
-                  </svg>
+                  class="text-xl font-semibold text-gray-700 transition duration-300 
+                          hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-500 hover:to-orange-400
+                          hover:text-transparent hover:bg-clip-text">
                   @__eugene_c__
                 </a>
+              </div>
+
+              <!-- 소셜 아이콘만 크게 표시 -->
+              <div class="flex space-x-10 justify-center items-center mt-10">
+              <!-- 메일 아이콘 -->
+              <a href="mailto:dwlsc0304@gmail.com" target="_blank">
+              <img src="/img/mail.png"
+                    alt="Apple Mail Icon" class="h-16 hover:scale-110 transition-transform duration-300" />
+              </a>
+
+              <!-- 인스타그램 아이콘 -->
+              <a href="https://www.instagram.com/__eugene_c__/" target="_blank">
+              <img src="/img/insta.png"
+                    alt="Instagram Icon" class="h-16 hover:scale-110 transition-transform duration-300" />
+              </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+      
       
 
     <!-- 모달 -->
